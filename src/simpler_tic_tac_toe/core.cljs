@@ -9,7 +9,7 @@
   (vec (repeat n (vec (repeat n :blank)))))
 
 (defonce app-state
-  (atom {:board  (blank-board board-size)
+  (atom {:board (blank-board board-size)
          :game-status :active}))
 
 (defn update-app-state! [new-board new-game-status]
@@ -19,13 +19,11 @@
 (defn reset-app-state! []
   (update-app-state! (blank-board board-size) :active))
 
-(defn board-positions [board-size]
+(defn board-positions []
   (for [x (range board-size) y (range board-size)] [x y]))
 
 (defn board-spaces-of-type [board type]
-  (let [board-size (count board)
-        positions (board-positions board-size)]
-     (filter #(= type (get-in board %)) positions)))
+  (filter #(= type (get-in board %)) (board-positions)))
 
 (defn start-of-n-length-run? [board position n player]
   (let [[row column] position]
