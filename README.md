@@ -1,10 +1,8 @@
 # simpler-tic-tac-toe
 
-FIXME: Write a one-line description of your library/project.
+A simpler version of [this tic tac toe game](https://github.com/stungeye/Tic-Tac-Toe-on-Clojure-Reagent) built using Clojurescript and Reagent.
 
-## Overview
-
-FIXME: Write a paragraph about the library/project and highlight its goals.
+The main difference is that this code only supports a 3 by 3 board.
 
 ## Setup
 
@@ -30,10 +28,12 @@ To create a production build run:
     lein do clean, cljsbuild once min
 
 And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
+get live reloading, nor a REPL.
 
-## License
+## Unlicense
 
-Copyright © 2014 FIXME
+This is free and unencumbered software released into the public domain.
 
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
