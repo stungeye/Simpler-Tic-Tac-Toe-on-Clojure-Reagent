@@ -1,2 +1,28 @@
-/* some style */
+.new-game-component label {
+  display: block;
+}
+  .new-game-component label span {
+    display: inline-block;
+    width: 120px;
+  }
+  .new-game-component label select {
+    width: 50px;
+  }
 
+.new-game-component button {
+  margin-top: 10px;
+  width: 170px;
+}
+
+.board {
+  margin-bottom: 15px;
+}
+  .board p {
+    margin: 0 0 10px 0;
+  }
+  .board button {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-right: 10px;
+  }

@@ -1,4 +1,4 @@
-(defproject tic-tac-toe "0.1.0-SNAPSHOT"
+(defproject simpler-tic-tac-toe "0.1.0-SNAPSHOT"
   :description "Tic Tac Toe on Reagent"
   :url "https://github.com/stungeye/Simpler-Tic-Tac-Toe-on-Clojure-Reagent"
   :license {:name "Unlicense"
@@ -24,11 +24,11 @@
                 :source-paths ["src"]
 
                 ;; If no code is to be run, set :figwheel true for continued automagical reloading
-                :figwheel {:on-jsload "tic-tac-toe.core/on-js-reload"}
+                :figwheel {:on-jsload "simpler-tic-tac-toe.core/on-js-reload"}
 
-                :compiler {:main tic-tac-toe.core
+                :compiler {:main simpler-tic-tac-toe.core
                            :asset-path "js/compiled/out"
-                           :output-to "resources/public/js/compiled/tic_tac_toe.js"
+                           :output-to "resources/public/js/compiled/simpler_tic_tac_toe.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
                ;; This next build is an compressed minified build for
@@ -36,8 +36,8 @@
                ;; lein cljsbuild once min
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/tic_tac_toe.js"
-                           :main tic-tac-toe.core
+                :compiler {:output-to "resources/public/js/compiled/simpler_tic_tac_toe.js"
+                           :main simpler-tic-tac-toe.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 
